@@ -1,0 +1,80 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Pagination from "@components/Pagination.astro";
+import Card from "@components/Card";
+import { SITE } from "@config";
+
+import { getCollection } from "astro:content";
+import getSortedPosts from "@utils/getSortedPosts";
+import Hr from "@components/Hr.astro";
+
+
+
+const posts = await getCollection("blog");
+
+const sortedPosts = getSortedPosts(posts);
+const DataEngineering = sortedPosts.filter(({ data }) => data.dataEngineering);
+const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+
+export interface Props {
+  currentPage: number;
+  totalPages: number;
+  paginatedPosts: CollectionEntry<"blog">[];
+}
+
+const { currentPage, totalPages, paginatedPosts } = Astro.props;
+---
+
+<Layout title={`Posts | ${SITE.title}`}>
+  <Header activeNav="projects" />
+  <Main pageTitle="Projects" pageDesc="All the projects I've posted.">
+<div>
+    {
+      DataEngineering.length > 0 && (
+        <>
+          <section id="featured">
+            <h2 id="title">Data Engineering</h2>
+            <ul>
+              {DataEngineering.map(({ data, slug }) => (
+                <Card
+                  href={`/posts/${slug}/`}
+                  frontmatter={data}
+                  secHeading={false}
+                />
+              ))}
+            </ul>
+          </section>
+          {recentPosts.length > 0 && <Hr />}
+        </>
+      )
+    }
+  <br>
+</div>
+    <!-- <ul>
+      {
+        paginatedPosts.map(({ data, slug }) => (
+          <Card href={`/posts/${slug}/`} frontmatter={data} />
+        ))
+      }
+    </ul> -->
+  </Main>
+
+  <Pagination
+    {currentPage}
+    {totalPages}
+    prevUrl={`/posts${currentPage - 1 !== 1 ? "/" + (currentPage - 1) : ""}/`}
+    nextUrl={`/posts/${currentPage + 1}/`}
+  />
+
+  <Footer noMarginTop={totalPages > 1} />
+</Layout>
+
+<style>
+  #title { 
+    font-weight: 500;
+}  
+</style>
