@@ -18,6 +18,8 @@ const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 const DataEngineering = sortedPosts.filter(({ data }) => data.dataEngineering);
+const AI = sortedPosts.filter(({ data }) => data.AI);
+
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 export interface Props {
@@ -40,6 +42,18 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
             <h2 id="title">Data Engineering</h2>
             <ul>
               {DataEngineering.map(({ data, slug }) => (
+                <Card
+                  href={`/posts/${slug}/`}
+                  frontmatter={data}
+                  secHeading={false}
+                />
+              ))}
+            </ul>
+          </section>
+          <section id="featured">
+            <h2 id="title">AI/ML</h2>
+            <ul>
+              {AI.map(({ data, slug }) => (
                 <Card
                   href={`/posts/${slug}/`}
                   frontmatter={data}
