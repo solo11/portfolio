@@ -3,34 +3,17 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
-
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+Hi I'm Solomon, a Master's in Computer Science graduate with 2 years of experience working as a Data Engineer. I enjoy playing chess, fan of Kanye and J Cole and I also play guitar! Currently looking for full time opportunities 
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
 ## Tech Stack
+- Azure, Python, SQL, Databricks, Spark, DBT, Snowflake, Airflow, MongoDB, Git, Tableau, Power BI
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+[Grab my resume!](https://github.com/solo11/Resume/blob/main/Resume_solomon_panduga.pdf)
 
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+## Connect with me
+[Linkedin](https://www.linkedin.com/in/solo11/)
+Or my [email](mailto:solomonraj11@gmail.com).
