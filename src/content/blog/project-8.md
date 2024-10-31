@@ -24,7 +24,7 @@ A Global Database of Society - the GDELT Project monitors the world's broadcast,
 [Evidence Dashboard](https://gdelt-project.evidence.app/)
 
 
-[Github](https://github.com/solo11/Data-engineering-project-2/)
+[Github](soon)
 <svg
     xmlns="http://www.w3.org/2000/svg"
     class="icon-tabler"
