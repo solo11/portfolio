@@ -3,7 +3,7 @@ author: Solomon
 pubDatetime: 2024-10-30T15:57:52.737Z
 title: GDELT Project - Data Engineering project
 slug: project-8
-featured: false
+featured: true
 dataEngineering: true
 ogImage: https://resilienceyouthnetwork.org/wp-content/uploads/2022/07/2560px-USGS_logo_green.svg_-1024x410.pnga781-1f3d93bdf0ec.png
 tags:
