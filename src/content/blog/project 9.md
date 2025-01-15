@@ -1,5 +1,20 @@
-Tracking Orcas — Harnessing the Power of LLMs and Data Engineering
-==================================================================
+---
+author: Solomon
+pubDatetime: 2025-01-15T15:57:52.737Z
+title: Tracking Orcas — Harnessing the Power of LLMs and Data Engineering
+slug: project-9
+featured: true
+dataEngineering: true
+ogImage: https://resilienceyouthnetwork.org/wp-content/uploads/2022/07/2560px-USGS_logo_green.svg_-1024x410.pnga781-1f3d93bdf0ec.png
+tags:
+ - project
+ - polars
+ - DuckDB
+ - Data Engineering
+ - Tableau
+ - OpenAI
+description: Tracking Orcas — Harnessing the Power of LLMs and Data Engineering
+---
 
 Unstructured data can be challenging when it comes to storing, analyzing, and extracting value from it. Whale tracking is one example where sightings are reported by individual whale enthusiasts — primarily through Facebook groups and orca sighting websites like orcanetwork.org. However, structuring this data for further analysis and drawing meaningful insights becomes difficult.
 
