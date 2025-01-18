@@ -16,6 +16,7 @@ tags:
 description: Tracking Orcas — Harnessing the Power of LLMs and Data Engineering
 ---
 
+You can also read the article on [Medium](https://solo11.medium.com/tracking-orcas-harnessing-the-power-of-llms-and-data-engineering-bcf0132bacc6)
 Unstructured data can be challenging when it comes to storing, analyzing, and extracting value from it. Whale tracking is one example where sightings are reported by individual whale enthusiasts — primarily through Facebook groups and orca sighting websites like orcanetwork.org. However, structuring this data for further analysis and drawing meaningful insights becomes difficult.
 
 Below are some examples of sightings reported by the orcanetwork.org community:
